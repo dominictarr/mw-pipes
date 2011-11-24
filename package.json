@@ -1,0 +1,17 @@
+{
+  "author": "",
+  "name": "mw-pipes",
+  "version": "0.0.0",
+  "repository": {
+    "url": ""
+  },
+  "engines": {
+    "node": "*"
+  },
+  "main": "pipes.js",
+  "dependencies": {},
+  "devDependencies": {
+    "assertions": "2",
+    "tap": "0.1"
+  }
+}
