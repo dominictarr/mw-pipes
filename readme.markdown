@@ -3,6 +3,9 @@
 connect-compatible middleware connector, but with more elegant support for streams.
 
 allow better support for streams that modify the request or response.
+`next` accepts optional `_req`, and `_res` arguments after the error parameter.
+
+(these should be streams that are piped to or from the real `req`, `res` objects.)
 
 ``` js
 var pipes = require('mw-pipes')
@@ -21,6 +24,7 @@ http.createServer(
     },
     ...
 ```
+
 the properties of `req` and `res` will be copied onto x and y with getters/setters so that
 they will behave just like a regular `ServerRequest` and `ServerResponse` to downstream middleware.
 
